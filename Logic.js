@@ -109,7 +109,7 @@ AgentCompatible.SupportedBrowserTypeParsers = [
 
 /**
  * Gets information about the browser from which the specified agent
- * string came, but only if it's browser type (IE, FF, Chrome) is one
+ * string came, but only if its browser type (IE, FF, Chrome) is one
  * that we might support.
  */
 AgentCompatible.GetSupportedBrowserInfo = function (userAgentString) {
