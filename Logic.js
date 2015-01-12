@@ -31,9 +31,9 @@ AgentCompatible.UserAgentStringParser.prototype.Parse = function (userAgentStrin
         if (matches) {
             result = new AgentCompatible.BrowserInfo(this.BrowserName, matches[2]);
         }
-
-        return result;
     }
+
+    return result;
 };
 
 /**
