@@ -1,0 +1,19 @@
+﻿This ended up taking me a little longer than expected, but it was for a few
+of good reasons.
+
+First, I knew straight away that I wanted to TDD it.  This would give me
+confidence in my solution, show how important quality is to me, and also give
+the reader a nice little test runner that could be run straight from the file
+system.  But I hadn't used QUnit in a few months, and it took me a bit of time
+(probably about an hour due to some problems with scenario iteration) to 
+re-orient myself.
+
+Next, I thought that the public API on the linked website,
+http://www.useragentstring.com/pages/useragentstring.php was the thing to use. 
+I thought, "cool -- they're asking if I know how to use APIs from my pages."  No
+dice.  I tried a couple of little hacks, but they didn't work, leaving me with
+this dilemma: do I spin up a little web server to avoid CORS problems, or do I
+just fake it with regexes?  I went with the faking approach, because it keeps 
+our dependencies low.  Unfortunately, I use regexes pretty rarely, especially 
+for grouping, so that was a bit of a rabbit hole.  (It added maybe fifteen more
+minutes.)
